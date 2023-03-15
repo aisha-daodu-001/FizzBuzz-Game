@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <h1>FizzBuzz</h1>
+    <ul>
+      {% for number in numbers %}
+        {% if number % 3 == 0 and number % 5 == 0 %}
+          <li>FizzBuzz</li>
+        {% elif number % 3 == 0 %}
+          <li>Fizz</li>
+        {% elif number % 5 == 0 %}
+          <li>Buzz</li>
+        {% else %}
+          <li>{{ number }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </body>
+</html>
